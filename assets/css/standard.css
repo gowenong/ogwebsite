@@ -352,7 +352,7 @@ div {
 .page-whole {
     width: 100vw;
     height: 100%;
-    padding: 2vw;
+    padding: 0;
     display: flex;
     align-items: center;
     float: center;
@@ -642,6 +642,56 @@ u {
     padding: 1vw;
 }
 
+/* Teaching Styles */
+.page-split-teaching {
+    width: 50vw;
+    height: 100%;
+    margin: 4vw 25vw;
+    display: inherit;
+    align-items: left;
+    float: left;
+}
+
+ul.teaching-header {
+    text-align: left;
+    font-family: "Font Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-1);
+    font-size: 3em;
+    text-indent: 0;
+    margin: 0 0em;
+    padding: 2vw 0;
+}
+
+li.topic-pri {
+    text-align: left;
+    font-family: "Font Secdondary", Helvetica, Arial, sans-serif;
+    color: var(--colour-4);
+    font-size: 0.5em;
+    margin: 0.35em 2em;
+}
+
+li.topic-pri a {
+    text-decoration: underline;
+    color: var(--colour-4);
+}
+
+li.topic-sec {
+    text-align: left;
+    font-family: "Font Text", Helvetica, Arial, sans-serif;
+    color: var(--colour-5);
+    font-size: 0.3em;
+    margin: 0.35em 6em;
+}
+
+li.topic-sec a {
+    text-decoration: underline;
+    color: var(--colour-5);
+}
+
+li.topic-pri a:hover, li.topic-sec a:hover {
+    cursor: pointer;
+}
+
 /* Footer */
 .footer-wrapper {
     width: 100%;
@@ -923,7 +973,8 @@ body {
 .page {
     width: 100vw;
     height: auto;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     padding: 0vw 0;
@@ -932,7 +983,8 @@ body {
 .dark-page {
     width: 100vw;
     height: auto;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: var(--colour-3);
     padding: 0vw 0;
@@ -985,10 +1037,6 @@ div {
     order: 2;
 }
 
-.hide-mobile {
-    display: none;
-}
-
 .split-content {
     width: auto;
     height: auto;
@@ -1033,6 +1081,7 @@ div {
     height: auto;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .cover-title {
@@ -1044,9 +1093,10 @@ div {
 }
 
 .cover-t-container {
-    position: absolute;
-    left: 2em;
-    bottom: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .cover-image {
@@ -1264,6 +1314,57 @@ u {
     width: 100%;
     height: auto;
     padding: 1vw;
+}
+
+/* Teaching Styles */
+.page-split-teaching {
+    width: 75vw;
+    height: 100%;
+    margin: 4vw 12.5vw;
+    display: inherit;
+    align-items: center;
+    float: inherit;
+    padding: 2vw;
+}
+
+ul.teaching-header {
+    text-align: left;
+    font-family: "Font Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-1);
+    font-size: 2em;
+    text-indent: 0;
+    margin: 0 0em;
+    padding: 2vw 0;
+}
+
+li.topic-pri {
+    text-align: left;
+    font-family: "Font Secdondary", Helvetica, Arial, sans-serif;
+    color: var(--colour-4);
+    font-size: 0.6em;
+    margin: 0.35em 2em;
+}
+
+li.topic-pri a {
+    text-decoration: underline;
+    color: var(--colour-4);
+}
+
+li.topic-sec {
+    text-align: left;
+    font-family: "Font Text", Helvetica, Arial, sans-serif;
+    color: var(--colour-5);
+    font-size: 0.5em;
+    margin: 0.35em 4em;
+}
+
+li.topic-sec a {
+    text-decoration: underline;
+    color: var(--colour-5);
+}
+
+li.topic-pri a:hover, li.topic-sec a:hover {
+    cursor: pointer;
 }
 
 /* Footer */
@@ -1549,7 +1650,8 @@ body {
 .page {
     width: 100vw;
     height: auto;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     padding: 0vw 0;
@@ -1558,7 +1660,8 @@ body {
 .dark-page {
     width: 100vw;
     height: auto;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: var(--colour-3);
     padding: 0vw 0;
@@ -1597,7 +1700,7 @@ div {
 .page-whole {
     width: 100vw;
     height: 100%;
-    padding: 2vw;
+    padding: 0;
     display: flex;
     align-items: center;
     float: center;
@@ -1609,10 +1712,6 @@ div {
 
 .ps-text {
     order: 2;
-}
-
-.hide-mobile {
-    display: none;
 }
 
 .split-content {
@@ -1659,6 +1758,7 @@ div {
     height: auto;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .cover-title {
@@ -1670,9 +1770,10 @@ div {
 }
 
 .cover-t-container {
-    position: absolute;
-    left: 1em;
-    bottom: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .cover-image {
@@ -1890,6 +1991,57 @@ u {
     width: 100%;
     height: auto;
     padding: 1vw;
+}
+
+/* Teaching Styles */
+.page-split-teaching {
+    width: 100%;
+    height: 100%;
+    margin: 5vw 0;
+    display: inherit;
+    align-items: center;
+    float: inherit;
+    padding: 1em;
+}
+
+ul.teaching-header {
+    text-align: left;
+    font-family: "Font Primary", Helvetica, Arial, sans-serif;
+    color: var(--colour-1);
+    font-size: 2em;
+    text-indent: 0;
+    margin: 0 0em;
+    padding: 2vw 0;
+}
+
+li.topic-pri {
+    text-align: left;
+    font-family: "Font Secdondary", Helvetica, Arial, sans-serif;
+    color: var(--colour-4);
+    font-size: 0.6em;
+    margin: 0.35em 2em;
+}
+
+li.topic-pri a {
+    text-decoration: underline;
+    color: var(--colour-4);
+}
+
+li.topic-sec {
+    text-align: left;
+    font-family: "Font Text", Helvetica, Arial, sans-serif;
+    color: var(--colour-5);
+    font-size: 0.45em;
+    margin: 0.35em 4em;
+}
+
+li.topic-sec a {
+    text-decoration: underline;
+    color: var(--colour-5);
+}
+
+li.topic-pri a:hover, li.topic-sec a:hover {
+    cursor: pointer;
 }
 
 /* Footer */
