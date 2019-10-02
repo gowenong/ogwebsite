@@ -27,7 +27,7 @@
 :root {
     --colour-1: rgb(52, 86, 120);
     --colour-2: rgb(255,255,255);
-    --colour-3: rgb(247, 247, 247);
+    --colour-3: rgb(240, 240, 240);
     --colour-4: rgb(0, 160, 209);
     --colour-5: rgb(26,26,26);
     --colour-6: rgb(245,245,245);
@@ -380,6 +380,7 @@ div {
     font-family: "Font Primary", Helvetica, Arial, sans-serif;
     color: var(--colour-1);
     font-size: 3em;
+    text-indent: 0;
 }
 
 .centre-header {
@@ -392,7 +393,7 @@ div {
 
 .split-text {
     text-align: left;
-    text-indent: 0.5em;
+    text-indent: 0;
     font-size: 1em;
     padding: 1em 0.25vw;
     color: var(--colour-4);
@@ -1056,7 +1057,7 @@ div {
     font-family: "Font Primary", Helvetica, Arial, sans-serif;
     color: var(--colour-1);
     font-size: 2em;
-    text-indent: none;
+    text-indent: 0;
 }
 
 .centre-header {
@@ -1070,7 +1071,7 @@ div {
 
 .split-text {
     text-align: left;
-    text-indent: 0.5em;
+    text-indent: 0;
     font-size: 1em;
     padding: 1em 0.25vw;
     color: var(--colour-4);
@@ -1733,7 +1734,7 @@ div {
     font-family: "Font Primary", Helvetica, Arial, sans-serif;
     color: var(--colour-1);
     font-size: 1.25em;
-    text-indent: none;
+    text-indent: 0;
 }
 
 .centre-header {
@@ -1747,7 +1748,7 @@ div {
 
 .split-text {
     text-align: left;
-    text-indent: 0.5em;
+    text-indent: 0;
     font-size: 0.7em;
     padding: 1em 0.25vw;
     color: var(--colour-4);

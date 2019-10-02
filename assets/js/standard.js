@@ -65,6 +65,11 @@ $(document).ready(function (){
             scrollTop: $(".section-4").offset().top
         }, 1000, 'easeInOutExpo');
     });
+    $("#tab5").click(function (){
+        $('html, body').stop(true, false).animate({
+            scrollTop: $(".section-5").offset().top
+        }, 1000, 'easeInOutExpo');
+    });
 
     // Tab Scroll CSS Control //
     $(window).scroll(function(){
@@ -97,6 +102,12 @@ $(document).ready(function (){
             document.title = 'Owen Gong | Projects';
         }else{
             $("#tab4").css("border-bottom","2px solid rgba(0,0,0,0)");
+        }
+        if($(window).scrollTop() >= $(".section-5").offset().top - 50){
+            $("#tab5").css("border-bottom","2px solid #00a0d1");
+            document.title = 'Owen Gong | Blog';
+        }else{
+            $("#tab5").css("border-bottom","2px solid rgba(0,0,0,0)");
         }
     });
 
